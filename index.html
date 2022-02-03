@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather-App</title>
+</head>
+<body>
+    <main>
+        <header>
+            <i class="fas fa-arrow-left back-icon"></i>
+            <h2 class="head">Weather App</h2>
+        </header>
+        <section class="input-part">
+            <p class="info-txt pending">Plz Enter Valid City</p>
+            <input type="text" class="Enter-city" placeholder="Enter city name">
+            <div class="spliter">or</div>
+            <button class="get-btn">Get Device Location</button>
+        </section>
+        <section class="weather-part">
+            <section class="important-info">
+                <img src="assets/img/clear.svg" alt="">
+                <h1 class="numb">30° C</h1>
+                <p>Broken Clouds</p>
+                <span><i class="fas fa-map-marker-alt"></i> Karaj , Iran</span>
+            </section>
+            <footer class="footer-info">
+                <span class="column feels">
+                    <i class="fas fa-temperature-high"></i>
+                    <p class="temp">30° C</p>
+                    <p>Feels Like</p>
+                </span>
+                <span class="column humidity">
+                    <i class="fas fa-tint"></i>
+                    <p class="temp">80 %</p>
+                    <p>Humidity</p>
+                </span>
+            </footer>
+        </section>
+    </main>
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
