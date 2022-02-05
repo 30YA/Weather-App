@@ -47,7 +47,7 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 32px 25px;
+    padding: 23px 25px 25px 25px;
     border-radius: 30px;
     box-shadow: 0 2px 7px -1px rgb(70, 0, 184);
     
@@ -57,15 +57,23 @@ header{
     padding-bottom: 20px;
     margin-bottom: 25px;
 }
-header .back-icon{
+main header .back-icon{
     font-size: 20px;
     display: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+main.active header .back-icon{
+    display: inline;
 }
 header .head{
     display: inline-block;
 }
 /*-------------- input part -------------*/
-.input-part{
+main .input-part{
+    display: block;
+}
+main.active .input-part{
     display: none;
 }
 .info-txt{
@@ -149,10 +157,13 @@ header .head{
     transform: translate(0,-5px);
 }
 /*-------------- input part -------------*/
-.weather-part{
-    /* display: none; */
+main .weather-part{
+    display: none;
     text-align: center;
     width: 100%;
+}
+main.active .weather-part{
+    display: block;
 }
 .important-info{
     width: 100%;
@@ -175,10 +186,38 @@ header .head{
     font-size: 20px;
     font-weight: 200;
 }
-.footer-info{
+footer{
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 20px 0;
+    padding: 10px 0 10px 0;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+}
+footer::after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+footer .column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .column i{
+    font-size: 38px;
+    margin-right: 10px;
+    color: rgb(0, 217, 255);
+}
+footer .column .info .feels{
+    font-size: 27px;
+}
+footer .column .info .humidity{
+    font-size: 27px;
+}
+footer .column .info .caption{
+    font-size: 12px;
 }

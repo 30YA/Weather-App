@@ -9,12 +9,12 @@
     <title>Weather-App</title>
 </head>
 <body>
-    <main>
+    <main class="">
         <header>
             <i class="fas fa-arrow-left back-icon"></i>
             <h2 class="head">Weather App</h2>
         </header>
-        <section class="input-part">
+        <section class="input-part ">
             <p class="info-txt pending">Plz Enter Valid City</p>
             <input type="text" class="Enter-city" placeholder="Enter city name">
             <div class="spliter">or</div>
@@ -27,16 +27,20 @@
                 <p>Broken Clouds</p>
                 <span><i class="fas fa-map-marker-alt"></i> Karaj , Iran</span>
             </section>
-            <footer class="footer-info">
+            <footer>
                 <span class="column feels">
                     <i class="fas fa-temperature-high"></i>
-                    <p class="temp">30° C</p>
-                    <p>Feels Like</p>
+                    <div class="info">
+                       <p class="feels">30° C</p>
+                       <p class="caption">Feels Like</p>
+                    </div>
                 </span>
                 <span class="column humidity">
                     <i class="fas fa-tint"></i>
-                    <p class="temp">80 %</p>
-                    <p>Humidity</p>
+                    <div class="info">
+                       <p class="humidity">80 %</p>
+                       <p class="caption">Humidity</p>
+                    </div>
                 </span>
             </footer>
         </section>
